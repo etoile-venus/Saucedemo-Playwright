@@ -2,9 +2,22 @@
 
 *GitHub* - [etoile-venus/Saucedemo-Playwright](https://github.com/etoile-venus/Saucedemo-Playwright)
 
-This project is a practice UI automation framework for the SauceDemo website using Playwright. It’s an exercise to expand my automation skills beyond Selenium and explore Playwright’s modern testing capabilities.
+## About This Project
 
+This is a Work In Progress (WIP) UI automation project for the SauceDemo web app using Playwright with TypeScript. The goal is to practice and build a modern, maintainable test framework.
 
+### What I've Implemented So Far:
+- Login tests with multiple user scenarios (valid and invalid) using nested `describe` and loops for efficient test coverage.  
+- Homepage content validations and cross-checking item details consistency between homepage and item pages.  
+- Adding items to cart directly from the homepage.  
+- Usage of Playwright's built-in Test Runner (with UI mode support).  
+- Parallel test execution with `describe.parallel` to speed up the test runs.  
+- Custom fixtures like `testWithCookies` to bypass login on homepage tests.  
+- Centralized route management with a dedicated `routes` file for cleaner navigation handling.  
+
+### What’s Next:
+- Reporting, screenshots, and enhanced logging features.
+  
 ---
 
 ## Technologies
