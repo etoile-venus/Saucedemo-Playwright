@@ -2,7 +2,8 @@
 
 *GitHub* - [etoile-venus/Saucedemo-Playwright](https://github.com/etoile-venus/Saucedemo-Playwright)
 
-This repository contains a **Work In Progress (WIP) UI automation project** for the [SauceDemo](https://www.saucedemo.com/) e-commerce website, utilizing **Playwright**. The aim is to build a robust and modern test automation framework for web application testing.
+This project is a practice UI automation framework for the SauceDemo website using Playwright. It’s an exercise to expand my automation skills beyond Selenium and explore Playwright’s modern testing capabilities.
+
 
 ---
 
@@ -39,10 +40,53 @@ This repository contains a **Work In Progress (WIP) UI automation project** for 
     ```
 
 ---
+## Project Structure
 
+```bash
+Saucedemo-Playwright
+├── src
+│   ├── components
+│   │   ├── ItemComponent.ts
+│   │   └── MenuComponent.ts
+│   ├── data
+│   │   ├── routes.ts
+│   │   └── providers
+│   │       ├── QuantityProvider.ts
+│   │       ├── SortCasesProvider.ts
+│   │       └── UsersProvider.ts
+│   ├── pages
+│   │   ├── BasePage.ts
+│   │   ├── HomePage.ts
+│   │   ├── ItemPage.ts
+│   │   └── LoginPage.ts
+│   └── utilities
+│       ├── Interfaces.ts
+│       ├── PageManager.ts
+│       └── Types.ts
+├── tests
+│   ├── home.spec.ts
+│   ├── login.spec.ts
+│   └── fixtures
+│       └── testWithCookie.ts
+```
+---
 ## How to Run Tests (Currently Under Development)
+After setting up the project, you can run the tests using the following commands:
 
-* **Note:** This project is currently under active development. Testing commands and specific instructions will be added as the framework matures.
+- Run all tests in headless mode:
+  ```
+  npx playwright test
+  ```
+
+- Run tests in headed mode:
+  ```
+  npx playwright test --headed
+  ```
+
+- Launch Playwright's interactive Test UI:
+  ```
+  npx playwright test --ui
+  ```
 
 ---
 
