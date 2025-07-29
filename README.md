@@ -1,6 +1,6 @@
 # SauceDemo Playwright Automation (WIP)
 
-🔗 GitHub: [etoile-venus/Saucedemo-Playwright](https://github.com/etoile-venus/Saucedemo-Playwright)
+*GitHub* - [etoile-venus/Saucedemo-Playwright](https://github.com/etoile-venus/Saucedemo-Playwright)
 
 This repository contains a **Work In Progress (WIP) UI automation project** for the [SauceDemo](https://www.saucedemo.com/) e-commerce website, utilizing **Playwright**. The aim is to build a robust and modern test automation framework for web application testing.
 
