@@ -1,0 +1,1 @@
+export const quantities: number[] = [1,6];

@@ -17,7 +17,7 @@ export class MenuComponent {
         return this.page.getByRole('button', { name: 'Close Menu' });
     }
     get logoutButton(): Locator {
-        return this.page.getByRole('link', { name: 'Logout'});
+          return this.page.locator('a[data-test="logout-sidebar-link"]');
     }
 
     async openCartPage(): Promise<void> {

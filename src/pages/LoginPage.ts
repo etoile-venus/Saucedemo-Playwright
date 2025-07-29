@@ -1,7 +1,6 @@
 import { Page, Locator, expect } from "@playwright/test";
 import { BasePage } from "../pages/BasePage"
 import { ROUTES } from "../data/routes";
-import { MenuComponent } from "../components/MenuComponent";
 
 export class LoginPage extends BasePage {
     get url(): string { return ROUTES.BASE_URL + ROUTES.LOGIN; }

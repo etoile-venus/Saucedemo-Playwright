@@ -1,10 +1,6 @@
-export interface UserCredentials {
-    username: string;
-    password: string;
-    errorMessage: string;
-}
+import { IUserCredentials } from "../../utilities/Interfaces"
 
-export const validUsers: UserCredentials[] = [
+export const validUsers: IUserCredentials[] = [
     {
         username: 'standard_user',
         password: 'secret_sauce',
@@ -32,7 +28,7 @@ export const validUsers: UserCredentials[] = [
     }
 ]
 
-export const invalidUsers: UserCredentials[] = [
+export const invalidUsers: IUserCredentials[] = [
     {
         username: '',
         password: 'secret_sauce',

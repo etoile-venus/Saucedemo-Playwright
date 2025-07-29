@@ -1,4 +1,5 @@
 import { Locator } from "@playwright/test";
+import { TItemFilter } from "../utilities/Types";
 
 export class ItemComponent {
     readonly root: Locator;
@@ -31,7 +32,7 @@ export class ItemComponent {
     }
 
     //** GET DATA METHODS */
-    async getId(sourceLink: 'title' | 'image' = 'title'): Promise<string> {
+    async getId(sourceLink: TItemFilter = 'title'): Promise<string> {
         const targetLink = (sourceLink === 'image') ? this.imageLink : this.titleLink;
         const dataTestAttr = await targetLink.getAttribute('data-test');
         return dataTestAttr?.split('-')[1] || '';
@@ -60,6 +61,15 @@ export class ItemComponent {
     async clickRemoveButton(): Promise<void> {
         await this.button.getByText("Remove").click();
     }
+
+    async clickOnItemBy(name: TItemFilter): Promise<void> {
+        switch(name) {
+            case 'title': this.clickTitleLink(); break;
+            case 'image': this.clickImageLink(); break;
+            default: throw new Error(`Can't open item by ${name}`);
+        }
+    }
+
     async clickImageLink(): Promise<void> {
         await this.imageLink.click();
     }

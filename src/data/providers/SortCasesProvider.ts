@@ -1,12 +1,6 @@
-import { test, expect } from '@playwright/test';
-import { HomePage } from '../pages/HomePage';
+import { IProductSortOption } from '../../utilities/Interfaces';
 
-export interface sortOption {
-    option: string,
-    itemType: 'title' | 'price'
-}
-
-export const sortOptions: sortOption[] = [
+export const productSortOptions: IProductSortOption[] = [
     {
         option: 'Name (A to Z)',
         itemType: 'title'
